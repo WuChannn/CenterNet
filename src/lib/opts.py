@@ -266,6 +266,7 @@ class opts(object):
       if i < rest_batch_size % (len(opt.gpus) - 1):
         slave_chunk_size += 1
       opt.chunk_sizes.append(slave_chunk_size)
+
     print('training chunk_sizes:', opt.chunk_sizes) # [15, 3, 3, 3, 2, 2, 2, 2]
 
     opt.root_dir = os.path.join(os.path.dirname(__file__), '..', '..') # CenterNet_xing/src/lib/../../

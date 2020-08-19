@@ -19,6 +19,7 @@ python demo.py ctdet --demo ../images/00b20879344c4989861ccc05596b023e.jpg --loa
 ~~~
 python test.py ctdet --exp_id dla --dataset ks --load_model ../exp/ctdet/coco_dla/model_best.pth
 ~~~
+
 ## New task
 
 You will need to add files to `src/lib/datasets/sample/`, `src/lib/datasets/trains/`, and `src/lib/datasets/detectors/`, which specify the data generation during training, the training targets, and the testing, respectively.

@@ -102,3 +102,4 @@ class CtdetDetector(BaseDetector): # 注意父类
         if bbox[4] > self.opt.vis_thresh:
           debugger.add_coco_bbox(bbox[:4], j - 1, bbox[4], show_txt=False, img_id=image_name)
     debugger.save_all_imgs()
+
